@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="/image_videos/favcon.png"
+      type="image/x-icon"
+    />
+    <title>Home | ArtiFicia®</title>
+  </head>
+  <body class="h-full w-full" data-scroll-container>
+    <div class="main" data-scroll-container>
+      <div class="page1 h-screen w-full" data-scroll-section>
+        <div
+          class="bg-black bg-opacity-35 text-white flex justify-center items-center w-[80px] h-[80px] cursor fixed z-20 rounded-full"
+        >
+          <p>play reel</p>
+        </div>
+        <video
+          autoplay
+          loop
+          muted
+          class="h-full w-full absolute object-cover"
+          src="/image_videos/Videobackground.mp4"
+        ></video>
+        <div
+          class="flex flex-col items-center justify-between h-full w-full page1_content relative"
+        >
+          <nav
+            class="p-7 font-bold w-full flex justify-between text-xl text-white"
+          >
+            <h1 class="text-xl sm:text-4xl text-blue-600">ArtiFicia</h1>
+            <h1 class="text-xl sm:text-4xl">Menu</h1>
+          </nav>
+          <h1 class="bottom-4 font-bold text-vw-5 text-white">
+            <span>A</span><span>r</span><span>t</span><span>i</span
+            ><span>F</span><span>i</span><span>c</span><span>i</span
+            ><span>a</span><span>l</span>
+          </h1>
+        </div>
+      </div>
+
+      <div class="page2 textAnimation p-3" data-scroll-section>
+        <div class="py-4 page2Header gap-5 flex justify-between flex-col">
+          <div class="flex justify-between">
+            <p class="text-lg">Tomorrow's Brands, Today™</p>
+            <p>Paris/Diego</p>
+          </div>
+          <hr class="h-[2px] w-full bg-black" />
+        </div>
+
+        <div class="page2Text p-2">
+          <span class="font-medium text-[6vw] sm:text-[3.5vw]  ">
+            We are a venture firm and digital agency. Our mission is to
+            transform founders' visions into remarkable brands. Choose
+            traditional compensation or an equity offset through our Venture
+            Model — your vision, your decision.
+          </span>
+        </div>
+      </div>
+
+      <div
+        class=" flex flex-col justify-evenly items-center min-h-screen page3"
+        data-scroll-section
+      >
+        <div class=" hover:cursor-pointer page3Header flex justify-center items-center gap-[10px] flex-col">
+          <p class="text-lg">Agency & Venture <span class="bg-black rounded-md text-white  p-1 text-[10px]" >Models</span><span class="mx-2">&#x21B4</span></p>
+          <h2 class="text-3xl sm:text-[4.5vw] underline"> Explore our services</h2>
+          <h2 class="text-3xl sm:text-[4.5vw] underline">and engagement models</h2>
+        </div>
+
+        <div class="h-[60vh] flex-col flex justify-between w-screen p-3 gap-1 textAnimation">
+        <div class="flex justify-between">
+          <p>Transforming visions into brands.</p>
+        <p> ↵ See the work </p>
+        </div>
+
+        <div class="grid  sm:grid-cols-3 listElemets h-full gap-3 w-full">
+          <div class="relative hover:cursor-pointer">
+            <span class="text-2xl absolute z-10 left-1/2 translate-x-[-50%] bottom-[75px] text-white font-extrabold
+             " >RIVIAN</span>
+            <img class="absolute w-full h-full hover:opacity-0 transition-all ease-linear duration-1000 " src="https://images.prismic.io/rejouice/d8e1fa1f-4f24-41e1-a249-098c62df5aff_Group+46+%281%29.jpg?auto=compress,format" alt="">
+            <video class=" object-cover h-full w-full hover:opacity-100" src="/image_videos/Website-homepage-Work-01_1.mp4" autoplay loop muted></video>
+          </div>
+
+          <div class="relative hover:cursor-pointer">
+            <img class="absolute w-full h-full hover:opacity-0 transition-all ease-linear duration-1000 "  src="https://images.prismic.io/rejouice/e0350a3d-c390-4d97-af1a-5c86bc822b52_Group+3929.jpg?auto=compress,format" alt="">
+            <video class="object-cover h-full w-full hover:opacity-100" src="/image_videos/Website-homepage-Work-02_1.mp4" autoplay loop muted></video>
+          </div>
+
+          <div class="relative hover:cursor-pointer">
+            <img class="absolute w-full h-full hover:opacity-0 transition-all ease-linear duration-1000" src="https://images.prismic.io/rejouice/2874f084-ec6c-4a19-b025-a55c1e6db929_Group+3692.jpg?auto=compress,format" alt="">
+            <video class="object-cover h-full w-full hover:opacity-100" src="/image_videos/Website-homepage-Work-03_1.mp4" autoplay loop muted></video>
+          </div>
+          
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
