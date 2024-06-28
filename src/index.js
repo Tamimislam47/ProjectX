@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function page2textAnimation(p) {
+  function page2textAnimation() {
     gsap.from(".textAnimation p, h,span", {
       y: 50,
       opacity: 0,
       duration: 1.5,
-      ease: "power4.out",
+      ease: "power2.out",
       scrollTrigger: {
         trigger: ".textAnimation",
         scroller: ".main",
@@ -67,7 +67,52 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function page4textAnimation() {
+    gsap.from(".page4 p", {
+      y: 50,
+      // opacity: 0,
+      duration: 1.5,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".page4",
+        scroller: ".main",
+        start: "top 80%",
+        end: "top 50%",
+        scrub: 2,
+      },
+    });
+  }
+
+  function page6textAnimation() {
+    gsap.from(".page6 p", {
+      y: 50,
+      duration: 1.5,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".page6",
+        scroller: ".main",
+        start: "top 80%",
+        end: "top 50%",
+        scrub: 2,
+      },
+    });
+  }
+
+  function swiper() {
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 15,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+      },
+    });
+  }
+
   // locoMotiveScroll();
   cursorMovement();
   page2textAnimation();
+  page4textAnimation();
+  page6textAnimation();
+  swiper();
 });
