@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
@@ -21,13 +20,24 @@
     <title>Home | ArtiFicia®</title>
   </head>
   <body class="h-full w-full" data-scroll-container>
+    <!-- Main Container -->
     <div class="main" data-scroll-container>
-      <div class="page1 h-screen w-full" data-scroll-section>
+      <!-- Page 1 -->
+      <div class="page1 h-screen w-full relative" data-scroll-section>
         <div
-          class="bg-black bg-opacity-35 text-white flex justify-center items-center w-[80px] h-[80px] cursor fixed z-20 rounded-full"
+          class="loader gap-3 text-[20px] sm:text-[2vw] flex justify-center items-center text-white absolute z-40 h-screen w-screen bg-black"
         >
-          <p>play reel</p>
+          <h1>Tomorrow's</h1>
+          <h1>Brand</h1>
+          <h1>Today"</h1>
         </div>
+
+        <div
+          class="bg-black bg-opacity-35 text-blue-500 flex justify-center items-center fixed cursor w-[80px] h-[80px] z-20 rounded-full"
+        >
+          Play reel
+        </div>
+
         <video
           autoplay
           loop
@@ -44,7 +54,7 @@
             <h1 class="text-xl sm:text-4xl text-blue-600">ArtiFicia</h1>
             <h1 class="text-xl sm:text-4xl">Menu</h1>
           </nav>
-          <h1 class="bottom-4 font-bold text-vw-5 text-white">
+          <h1 class="bottom-4 font-bold text-vw-20 text-white ">
             <span>A</span><span>r</span><span>t</span><span>i</span
             ><span>F</span><span>i</span><span>c</span><span>i</span
             ><span>a</span><span>l</span>
@@ -52,6 +62,7 @@
         </div>
       </div>
 
+      <!-- Page 2 -->
       <div class="page2 textAnimation p-3" data-scroll-section>
         <div class="py-4 page2Header gap-5 flex justify-between flex-col">
           <div class="flex justify-between">
@@ -60,105 +71,365 @@
           </div>
           <hr class="h-[2px] w-full bg-black" />
         </div>
-
         <div class="page2Text p-2">
-          <span class="font-medium text-[6vw] sm:text-[3.5vw]  ">
-            We are a venture firm and digital agency. Our mission is to
+          <span class="font-medium text-[6vw] sm:text-[3.5vw]"
+            >We are a venture firm and digital agency. Our mission is to
             transform founders' visions into remarkable brands. Choose
             traditional compensation or an equity offset through our Venture
-            Model — your vision, your decision.
-          </span>
+            Model — your vision, your decision.</span
+          >
+        </div>
+      </div>
+
+      <!-- Page 3 -->
+      <div
+        class="flex flex-col justify-evenly items-center min-h-screen page3"
+        data-scroll-section
+      >
+        <div
+          class="hover:cursor-pointer page3Header flex justify-center items-center gap-[10px] flex-col"
+        >
+          <p class="text-lg">
+            Agency & Venture
+            <span class="bg-black rounded-md text-white p-1 text-[10px]"
+              >Models</span
+            >
+          </p>
+          <h2 class="my-5 text-3xl sm:text-vw-3.5 underline">
+            Explore our services
+          </h2>
+          <h2 class="text-3xl sm:text-vw-3.5 underline">
+            and engagement models
+          </h2>
+        </div>
+        <div
+          class="h-[80vh] flex-col flex justify-between w-screen p-3 gap-1 textAnimation"
+        >
+          <div class="flex justify-between">
+            <p>Transforming visions into brands.</p>
+            <p>↵ See the work</p>
+          </div>
+          <div
+            class="grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 listElemets h-[100vh] gap-3 w-full"
+          >
+            <div class="relative bg-cyan-500 h-full hover:cursor-pointer">
+              <img 
+              class="absolute z-50 w-[50%] bottom-14 left-[50%] translate-x-[-50%]"
+              src="https://images.prismic.io/rejouice/922bdc39-4619-4f3e-ad4d-0e68c4dc1ef4_Rivian_LogoLock-Up-Blanc.png?auto=compress,format"></img
+              >
+              <img
+                class="absolute w-full h-full z-10 hover:opacity-0 transition-all ease-linear duration-1000"
+                src="https://images.prismic.io/rejouice/d8e1fa1f-4f24-41e1-a249-098c62df5aff_Group+46+%281%29.jpg?auto=compress,format"
+                alt="Rivian Image"
+              />
+              <video
+                class="absolute w-full object-cover h-full hover:opacity-100"
+                src="/image_videos/Website-homepage-Work-01_1.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+            </div>
+            <div class="relative h-full hover:cursor-pointer">
+              <img 
+              class=" sm:h-[68px] absolute z-50 w-[50%] bottom-14 left-[50%] translate-x-[-50%]"
+              src="https://rejouice.cdn.prismic.io/rejouice/db4e8d50-218b-4f4b-b333-50e16b58a6d7_oura.svg"></img
+              >
+              <img
+                class="absolute w-full h-full z-10 hover:opacity-0 transition-all ease-linear duration-1000"
+                src="https://images.prismic.io/rejouice/e0350a3d-c390-4d97-af1a-5c86bc822b52_Group+3929.jpg?auto=compress,format"
+                alt="Project Image"
+              />
+              <video
+                class="absolute object-cover h-full w-full hover:opacity-100"
+                src="/image_videos/Website-homepage-Work-02_1.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+            </div>
+            <div class="relative  h-full hover:cursor-pointer">
+              <img 
+              class=" absolute z-50 w-[50%] bottom-14 left-[50%] translate-x-[-50%]"
+              src="https://rejouice.cdn.prismic.io/rejouice/a941061c-236f-4222-8fe2-2f61dbeeb48a_Logo.svg"></img
+              >
+              <img
+                class="absolute w-full h-full z-10 hover:opacity-0 transition-all ease-linear duration-1000"
+                src="https://images.prismic.io/rejouice/2874f084-ec6c-4a19-b025-a55c1e6db929_Group+3692.jpg?auto=compress,format"
+                alt="Project Image"
+              />
+              <video
+                class="absolute object-cover h-full w-full hover:opacity-100"
+                src="/image_videos/Website-homepage-Work-03_1.mp4"
+                autoplay
+                loop
+                muted
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 4 -->
+      <div class="page4 p-3" data-scroll-section>
+        <p class="2xl:text-vw-1">We operate on a simple philosophy:</p>
+        <p class="2xl:text-vw-1">Quality over quantity.</p>
+        <hr class="h-[2px] w-full bg-black" />
+        <p class="font-medium text-[6vw] sm:text-[3.5vw]">
+          We partner with up to 5 clients each year. This allows intense focus
+          on the transformation and launch of your brand by our very best team,
+          which is the only team we have. We specialize in working with startups
+          that are revolutionizing their industries.
+        </p>
+      </div>
+
+      <!-- Page 5 -->
+      <div
+        class="relative page5 flex justify-center items-center w-full h-screen"
+        data-scroll-section
+      >
+        <video
+          class="w-screen h-screen"
+          src="../image_videos/RJ-BALL-BLUE-ORANGE-scaled.webm"
+        ></video>
+        <svg
+          class="xl:w-1/4 w-1/2 absolute abs tl:0 fit transform rotate:-90deg"
+          viewBox="0 0 100 100"
+        >
+          <circle
+            cx="50"
+            cy="50"
+            r="49"
+            stroke="#fff"
+            stroke-width="0.25"
+            fill="none"
+            class="o:0.3 $$2$$ $$3$$ $$4$$ (.in-view):tween:all,2.8s,easeOutSlow dasharray:308 dashoffset:616 (.in-view):dashoffset:431.20000000000005"
+          ></circle>
+          <circle
+            cx="50"
+            cy="50"
+            r="49"
+            stroke="#fff"
+            stroke-width="0.25"
+            fill="none"
+            class="$$5$$ $$6$$ $$7$$ (.in-view):tween:all,2.8s,easeOutSlow dasharray:308 dashoffset:308 (.in-view):dashoffset:123.2"
+          ></circle>
+          <svg
+            class="absolute abs tl:0 fit transform rotate:0 $$8$$ (.in-view):tween:all,2.8s,easeOutSlow (.in-view):rotate:216deg"
+            viewBox="0 0 100 100"
+          >
+            <circle cx="50" cy="1" r="1" fill="#fff"></circle>
+          </svg>
+        </svg>
+      </div>
+
+      <!-- Page 6 -->
+      <div class="page6" data-scroll-section>
+        <p class="2xl:text-vw-1">Strategy & emotion.</p>
+        <p class="2xl:text-vw-1">You need both.</p>
+        <hr class="h-[2px] w-full bg-black my-3" />
+        <p class="font-medium text-[6vw] sm:text-[3.5vw]">
+          Data matters, yet it’s the emotion that drives buying decisions. We
+          don’t believe in ‘one size fits all.’ We craft unique brand
+          experiences that deeply resonate with your audience and boost your
+          KPIs.
+        </p>
+      </div>
+
+      <!-- Page 7 -->
+      <div
+        class="page7 min-h-screen flex justify-center items-center flex-col"
+        data-scroll-section
+      >
+        <h1 class="text-vw-9 w-full">Get in touch.</h1>
+        <hr class="h-[2px] w-full bg-black my-3" />
+
+        <div class="swiper mySwiper w-full sm:h-[500px]">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide flex justify-evenly items-end text-center text-lg"
+            >
+              <div
+                class="w-full px-3 gap-5 items-end img-container flex h-full"
+              >
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FyfGVufDB8fDB8fHww"
+                  alt="Image 1"
+                />
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhcnxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Image 1"
+                />
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNhcnxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Image 1"
+                />
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1515777315835-281b94c9589f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vdG9yYmlrZXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Image 1"
+                />
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1624958369967-000264f7fc3c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGhhcnxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Image 1"
+                />
+              </div>
+            </div>
+            <div
+              class="swiper-slide flex justify-evenly items-end text-center text-lg"
+            >
+              <div class="px-3 gap-5 items-end img-container flex h-full">
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FyfGVufDB8fDB8fHww"
+                  alt="Image 1"
+                />
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhcnxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Image 1"
+                />
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNhcnxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Image 1"
+                />
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1515777315835-281b94c9589f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vdG9yYmlrZXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Image 1"
+                />
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1624958369967-000264f7fc3c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGhhcnxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Image 1"
+                />
+              </div>
+            </div>
+            <div
+              class="swiper-slide flex justify-evenly items-end text-center text-lg"
+            >
+              <div class="px-3 gap-5 items-end img-container flex h-full">
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FyfGVufDB8fDB8fHww"
+                  alt="Image 1"
+                />
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhcnxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Image 1"
+                />
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNhcnxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Image 1"
+                />
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1515777315835-281b94c9589f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vdG9yYmlrZXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Image 1"
+                />
+                <img
+                  class="w-1/5 object-cover"
+                  src="https://images.unsplash.com/photo-1624958369967-000264f7fc3c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGhhcnxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="Image 1"
+                />
+              </div>
+            </div>
+            <!-- Additional slides can be added here -->
+          </div>
         </div>
       </div>
 
       <div
-        class=" flex flex-col justify-evenly items-center min-h-screen page3"
+        class="page8 h-[70vh] flex justify-center items-center"
         data-scroll-section
       >
-        <div class="hover:cursor-pointer page3Header flex justify-center items-center gap-[10px] flex-col">
-          <p class="text-lg">Agency & Venture <span class="bg-black rounded-md text-white  p-1 text-[10px]" >Models</span><span class="mx-2">&#x21B4</span></p>
-          <h2 class="my-5 text-3xl sm:text-vw-3.5  underline"> Explore our services</h2>
-          <h2 class=" text-3xl sm:text-vw-3.5  underline">and engagement models</h2>
-        </div>
-
-        <div class="h-[80vh] flex-col flex justify-between w-screen p-3 gap-1 textAnimation">
-        <div class="flex justify-between">
-          <p>Transforming visions into brands.</p>
-        <p> ↵ See the work </p>
-        </div>
-
-        <div class="grid  sm:grid-cols-3 listElemets h-[100vh] gap-3 w-full">
-          <div class="relative bg-cyan-500  h-full hover:cursor-pointer ">
-            <span class="text-2xl absolute z-10 left-1/2 translate-x-[-50%] bottom-[75px] text-white font-extrabold
-             " >RIVIAN</span>
-            <img class="absolute w-full h-full hover:opacity-0 transition-all ease-linear duration-1000 " src="https://images.prismic.io/rejouice/d8e1fa1f-4f24-41e1-a249-098c62df5aff_Group+46+%281%29.jpg?auto=compress,format" alt="">
-            <video class="absolute w-full object-cover h-full hover:opacity-100" src="/image_videos/Website-homepage-Work-01_1.mp4" autoplay loop muted></video>
-          </div>
-
-          <div class="relative bg-cyan-500  h-full hover:cursor-pointer ">
-            <img class="absolute w-full h-full hover:opacity-0 transition-all ease-linear duration-1000 "  src="https://images.prismic.io/rejouice/e0350a3d-c390-4d97-af1a-5c86bc822b52_Group+3929.jpg?auto=compress,format" alt="">
-            <video class="absolute object-cover h-full w-full hover:opacity-100" src="/image_videos/Website-homepage-Work-02_1.mp4" autoplay loop muted></video>
-          </div>
-
-          <div class="relative bg-cyan-500  h-full hover:cursor-pointer >
-            <img class="absolute w-full h-full hover:opacity-0 transition-all ease-linear duration-1000" src="https://images.prismic.io/rejouice/2874f084-ec6c-4a19-b025-a55c1e6db929_Group+3692.jpg?auto=compress,format" alt="">
-      <video class="absolute object-cover h-full w-full hover:opacity-100" src="/image_videos/Website-homepage-Work-03_1.mp4" autoplay loop muted></video>
-          </div>
-        </div>
-        </div>
+        <h1 class="text-xl">We’re uniquely built↵</h1>
       </div>
 
-      <div class="page4 p-3  " data-scroll-section>
-          <p class="2xl:text-vw-1" >We operate on a simple philosophy:</p>
-          <p class="2xl:text-vw-1" >Quality over quantity.</p>
-           <hr class="h-[2px] w-full bg-black" />
-           <p class="font-medium text-[6vw] sm:text-[3.5vw] " >        We partner with up to 5 clients each year. This allows intense focus on the transformation and launch of your brand by our very best team, which is the only team we have.  We specialize in working with startups that are revolutionizing their industries.</p>
-      </div>
-
-      <div class="relative page5 flex justify-center items-center w-full h-screen" data-scroll-section >
-      
-        <video class="w-screen h-screen  "  src="../image_videos/RJ-BALL-BLUE-ORANGE-scaled.webm"></video>
-        <svg class="xl:w-1/4 w-1/2 absolute abs tl:0 fit transform rotate:-90deg" viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="49" stroke="#fff" stroke-width="0.25" fill="none" class="o:0.3 $$2$$ $$3$$ $$4$$ (.in-view):tween:all,2.8s,easeOutSlow dasharray:308 dashoffset:616 (.in-view):dashoffset:431.20000000000005"></circle>
-          <circle cx="50" cy="50" r="49" stroke="#fff" stroke-width="0.25" fill="none" class="$$5$$ $$6$$ $$7$$ (.in-view):tween:all,2.8s,easeOutSlow dasharray:308 dashoffset:308 (.in-view):dashoffset:123.2"></circle>
-          <svg class="absolute abs tl:0 fit transform rotate:0 $$8$$ (.in-view):tween:all,2.8s,easeOutSlow (.in-view):rotate:216deg" viewBox="0 0 100 100">
-          <circle cx="50" cy="1" r="1" fill="#fff"></circle>
-        </svg>
-        </svg>
-
-      </div>      
-  
-      <div class="page6" data-scroll-section>
-        <p class="2xl:text-vw-1">Strategy & emotion.</p>
-        <p class="2xl:text-vw-1">You need both.</p>
-        <hr class="h-[2px] w-full bg-black my-3 " />
-        <p class="font-medium text-[6vw] sm:text-[3.5vw]">        Data matters, yet it’s the emotion that drives buying decisions. We don’t believe in ‘one size fits all.’ We craft unique brand experiences that deeply resonate with your audience and boost your KPIs.</p>
-      </div>
-
-      <div class="page7 min-h-screen flex justify-center items-center flex-col  ">
-        <h1 class="text-vw-9 w-full ">Get in touch.</h1>
-        <hr class="h-[2px] w-full bg-black my-3 " />
-
-        <div class="swiper mySwiper w-full min-h-[55vh]">
-          <div class="swiper-wrapper  w-full h-full">
-            <div class="swiper-slide flex ">
-            <img class="object-cover block" src="https://images.unsplash.com/photo-1719452551242-1aee6ca764ba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" alt="">
-            <img class="object-cover block" src="https://images.unsplash.com/photo-1719430074740-a5ee49a67d45?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90b3MtZmVlZHwxNnx8fGVufDB8fHx8fA%3D%3D" alt="">
+      <footer
+        class="footer h-screen w-screen bg-black justify-center sm:px-8 text-white"
+        data-scroll-section
+      >
+        <div class="container h-full max-w-full flex flex-col">
+          <div
+            class="flex justify-center items-center flex-col sm:items-baseline sm:flex-row sm:justify-between top h-[40vh] w-full"
+          >
+            <div
+              class="top-left flex flex-col h-36 gap-4 justify-center max-w-[50%]"
+            >
+              <h1 class="text-lg">Relax. We've got you.</h1>
+              <button
+                class="max-w-36 p-3 border-white border-[2px] rounded-[50px]"
+              >
+                Take a seat
+              </button>
             </div>
-            <div class="swiper-slide">Slide 2</div>
-            <!-- <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div> -->
+
+            <div class="top-right flex sm:flex-col items-end gap-4 min-w-[50%]">
+              <div
+                class="sm:w-[50%] flex gap-4 sm:gap-0 justify-between sm:p-5"
+              >
+                <ul class="float-right xl:text-vw-1">
+                  <li class="cursor-pointer hover:text-blue-500">Home</li>
+                  <li class="cursor-pointer hover:text-blue-500">Work</li>
+                  <li class="cursor-pointer hover:text-blue-500">About</li>
+                  <li class="cursor-pointer hover:text-blue-500">
+                    services & Models
+                  </li>
+                  <li class="cursor-pointer hover:text-blue-500">Contact</li>
+                </ul>
+
+                <ul class="xl:text-vw-1 p-4">
+                  <li class="cursor-pointer hover:text-blue-500">
+                    <a href="#">X</a>
+                  </li>
+                  <li class="cursor-pointer hover:text-blue-500">
+                    <a href="#">Intragram</a>
+                  </li>
+                  <li class="cursor-pointer hover:text-blue-500">
+                    <a href="#">Facebook</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="h-[5vh] w-full mid flex gap-4 flex-col justify-center items-center sm:flex-row sm:justify-between"
+          >
+            <div class="flex flex-col justify-center items-center text-vw-1">
+              <p>San Diego—California</p>
+              <p>Paris—France</p>
+            </div>
+
+            <div
+              class="w-[25%] right flex flex-col justify-center items-center sm:flex-row sm:justify-between"
+            >
+              <p>biz@artiFicia.com</p>
+              <p>©2023 legal</p>
+            </div>
+          </div>
+
+          <div class="bottom h-[45vh] w-full flex justify-center items-center">
+            <h1 class=" font-bold text-vw-20">
+              <span>A</span><span>r</span><span>t</span><span>i</span
+              ><span>F</span><span>i</span><span>c</span><span>i</span
+              ><span>a</span><span>l</span>
+            </h1>
           </div>
         </div>
-      </div>
-    
+      </footer>
     </div>
+    <!-- </div> -->
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script

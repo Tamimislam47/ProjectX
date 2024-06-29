@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function page2textAnimation() {
     gsap.from(".textAnimation p, h,span", {
       y: 50,
-      opacity: 0,
       duration: 1.5,
       ease: "power2.out",
       scrollTrigger: {
@@ -70,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function page4textAnimation() {
     gsap.from(".page4 p", {
       y: 50,
-      // opacity: 0,
       duration: 1.5,
       ease: "power2.out",
       scrollTrigger: {
@@ -98,21 +96,71 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function swiper() {
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 15,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: true,
+  function foter() {
+    gsap.from(".footer h1, span, button, p", {
+      y: 50,
+      duration: 1.5,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".footer",
+        scroller: ".main",
+        start: "top 80%",
+        end: "top 50%",
+        scrub: 2,
       },
     });
   }
 
-  // locoMotiveScroll();
+  function swiper() {
+    var swiper = new Swiper(".swiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  }
+
+  function time_line() {
+    var timeLine = gsap.timeline();
+
+    timeLine.from(".loader h1", {
+      x: 40,
+      duration: 1,
+      opacity: 0,
+      stagger: 0.1,
+    });
+
+    timeLine.to(".loader h1", {
+      x: -40,
+      duration: 1,
+      opacity: 0,
+      stagger: 0.1,
+    });
+
+    timeLine.to(".loader", {
+      opacity: 0,
+    });
+
+    timeLine.to(".loader", {
+      display: "none",
+    });
+
+    timeLine.from(".page1 h1 span", {
+      display: "inline-block",
+      y: 100,
+      opacity: 0,
+      stagger: 0.1,
+    });
+  }
+
+  time_line();
+  locoMotiveScroll();
   cursorMovement();
   page2textAnimation();
   page4textAnimation();
   page6textAnimation();
+  foter();
   swiper();
 });

@@ -9,6 +9,7 @@ module.exports = {
         "vw-3.5": "3.5vw",
         "vw-4": "4vw",
         "vw-9": "9vw",
+        "vw-20": "20vw",
       },
       width: {
         "vw-1": "1vw",
